@@ -36,13 +36,16 @@ const arrayTasks = {
 	sumOfAllEvenNumbersSquared: function (arr) {
 		const sum = arr.filter(item => item%2===0).map(item => Math.pow(item,2)).reduce((accumulator, currentItem)=> accumulator + currentItem);
 		return sum;
-	}
+	},
 
 	// ----------- EXTENSION ------------
 
-	// findDuplicates: function (arr) {
-
-	// },
+	findDuplicates: function (arr) {
+		const duplicates = arr.reduce(function(accumulator, currentItem, currentIndex, array) {
+			if (array.indexOf(currentItem) !== currentIndex && accumulator.indexOf(currentItem) == -1) accumulator.push(currentItem); return accumulator;
+		}, []);
+		return duplicates;
+	},
 
 }
 
