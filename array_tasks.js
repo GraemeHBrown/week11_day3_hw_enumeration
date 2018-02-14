@@ -25,13 +25,18 @@ const arrayTasks = {
 			 return withValsRemoved;
 	},
 
-	// findIndexesOf: function (arr, itemToFind) {
+	findIndexesOf: function (arr, itemToFind) {
+		const indexesOfRemoved = [];
+		arr.forEach(function(item, index){
+			if(item===itemToFind)indexesOfRemoved.push(index);
+		});
+		return indexesOfRemoved;
+	},
 
-	// },
-
-	// sumOfAllEvenNumbersSquared: function (arr) {
-
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+		const sum = arr.filter(item => item%2===0).map(item => Math.pow(item,2)).reduce((accumulator, currentItem)=> accumulator + currentItem);
+		return sum;
+	}
 
 	// ----------- EXTENSION ------------
 
