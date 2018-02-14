@@ -48,5 +48,7 @@ const arrayTasks = {
 	},
 
 }
-
+// array.indexOf(currentItem) !== currentIndex && accumulator.indexOf(currentItem) == -1
+//**this is the tricky bit it checks whether the first index of the item matches the current index, if not its the second instance (duplicate) 
+// && if the accumulator doesn't already contain this push it to accumulator array.
 module.exports = arrayTasks
