@@ -15,10 +15,12 @@ const arrayTasks = {
     return map;
 	},
 
-	// sum: function (arr) {
+	sum: function (arr) {
+    const result = arr.reduce((prev, curr) => prev + curr);
+    return result;
+	},
 
-	// },
-
+// .reduce( (prev, curr) => prev + curr );
 	// removeAndClone: function (arr, valueToRemove) {
 
 	// },
