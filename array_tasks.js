@@ -20,10 +20,10 @@ const arrayTasks = {
     return result;
 	},
 
-// .reduce( (prev, curr) => prev + curr );
-	// removeAndClone: function (arr, valueToRemove) {
-
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+			 const withValsRemoved = arr.filter(item => item!=valueToRemove);
+			 return withValsRemoved;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 

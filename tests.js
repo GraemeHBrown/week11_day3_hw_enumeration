@@ -25,12 +25,12 @@ describe('Array tasks', function () {
 		assert.strictEqual(arrayTasks.sum(arr), 15)
 	})
 
-	xit('should remove all instances of a value from an array, returning a new array', function () {
+	it('should remove all instances of a value from an array, returning a new array', function () {
 		const arr = [1, 2, 3, 1, 4, 5, 1]
 		assert.deepStrictEqual(arrayTasks.removeAndClone(arr, 1), [2, 3, 4, 5])
 	})
 
-	xit('should find all occurences of a value, returning an array of index positions', function () {
+	it('should find all occurences of a value, returning an array of index positions', function () {
 		const arr = [1, 2, 1, 3, 4, 1, 5]
 		assert.deepStrictEqual(arrayTasks.findIndexesOf(arr, 1), [0, 2, 5])
 	})
